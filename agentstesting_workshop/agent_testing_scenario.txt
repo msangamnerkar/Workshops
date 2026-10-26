@@ -1,0 +1,164 @@
+1. We used playwright test planer agent to create test plan for your project URL 
+
+agent : understand your question clearly 
+create test plan for the given website 
+
+this agent is already trained with different step by step process performing on each task assigned to it . 
+
+a. what is your capabilities => what you can do and what you can not do ? 
+
+description of the agent 
+
+b. how do you do this test plan creation: 
+
+we need to understand how planning agent  will create test plan for our website 
+
+1. setup and explore =>  which tool we need to call from playwright 
+
+setup page tool is first tool we need to call as a agent  => yes , my agent did it ? agent is not doing this test fail. 
+
+human in loop => in between AI loop ,  as a human you need to provide necessary permission to use certain facilities in the customer environment 
+
+test plan document preparation : 
+
+plan this task into a smaller  pieced : 
+agent loop => 
+a. think  => understand the task assigned to the agent and think about the which tool we need to use or tool set we need to use to complete this task 
+
+b. pick a tool => select the right tool to do the job 
+snapshot tool => it will capture browser screen shot  => at what level => depth -5 we need to capture the screen 
+
+c. arguments => inputs require to start act on it . 
+{
+json : key : value
+
+name: "ram",
+age: "",
+test1: "scenario1"
+
+}
+d. outcome of the tool => we do not directly consider => Agent need to observe is the response is what I am expecting if yes 
+
+maximum loop count => this is  a number => 5 
+
+try 1st attempt 
+
+think => pick a tool => input  => output  => observe the output  => not happy 
+continue the loop 
+think => pick a tool => input => output => observe => loop continues until 
+either you need to right outcome as per agent expectation 
+or you reached maximum count  => X loop will be ended . 
+
+infinite loop => continuously searching for the right content => 
+because of this unnecessarily your tokens will be consumed. 
+
+
+question to the agent  => agent produced output 
+
+=> check the outcome 
+verify created test plan 
+=> completeness 
+=> correctness 
+=> relevancy => as per you question the answer is relevant => redbus ? 
+=> faithfulness => safely we can use this test plan => any harmful content exist in this document . 
+=> factuality => is it true document / all scenarios mentioned in the test plan are true tests / any hallucinated tests [ never possible to test/ never exist feature in the red bus but you mentioned in the testplan] 
+
+=> this feature is not available in the redbus application but it is mentioned in the test scenarios?   
+
+1. Define regular test scenarios to test the test plan creation process - old manual testing 
+2. Define test cases for tool calling - 
+a. trajectory testing => right tool with right order => agent must select tools based on trajectory 
+
+how we are calling the tools  => order 
+1. right tool need to be selected based on the question 
+2. those tool should be called in the right order 
+
+3. agent loop => 
+   a. observe the response and if it is acceptable loop should stop 
+   b. observe the response and response is not acceptable go for another loop 
+until we reach the maximum count 
+   c. after reaching the maximum count = it should not move further => terminate 
+
+4. observability => observe the generated outcome or response and test it . 
+
+As per the task the agent finish the goal correctly or not ? 
+
+test plan document content verification as part of observability of the outcome 
+
+repeat the same question 3 times and if it is right document  produced all 3 times then my test is pass . 
+
+as per our 2 sessions we understand how to test ai agents => it is too difficult to manage all these thing in human evaluation . 
+
+that is the reason we invited automation tools as part of this agent testing 
+a. promptfoo => less code or no coding automation tool  
+b. deepeval => unit test for agents 
+
+here we are using another LLM to test you agent . 
+
+model: Claude Sonnet 4.6 this is AI brain used to generate the output for your testplanner agent . 
+
+Now I will use open AI model or groq model or ollama model in my automation tool to test agent behavior. 
+one ai brain testing the another ai response 
+LLM as a judge => to make you job very easy. 
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ok stop the loop move to second step 
+
+
+
+
+
+
+
+outcome : I created a test plan for redBus.com and saved it as redbus-web-test-plan.md.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

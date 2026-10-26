@@ -59,6 +59,7 @@ You will:
    - Happy path scenarios (normal user behavior)
    - Edge cases and boundary conditions
    - Error handling and validation
+   - end to end userflows
 
 4. **Structure Test Plans**
 
